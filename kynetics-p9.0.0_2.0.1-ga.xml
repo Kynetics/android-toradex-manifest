@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="kynetics-github"
+           fetch="https://github.com/kynetics/"
+           review="" />
+
+  <!-- Remove kernel and bootloader from NXP. -->
+  <remove-project name="linux-imx" />
+  <remove-project name="uboot-imx" />
+
+  <!-- Kernel and bootloader from Kynetics. -->
+  <project path="vendor/kynetics-opensource/uboot-imx" name="android-toradex-uboot-imx" remote="kynetics-github" revision="toradex/imx_p9.0.0_2.0.1-ga" />
+  <project path="vendor/kynetics-opensource/kernel_imx" name="android-toradex-linux-imx" remote="kynetics-github" revision="toradex/imx_p9.0.0_2.0.1-ga" />
+
+</manifest>
