@@ -10,7 +10,7 @@
   <remove-project name="uboot-imx" />
 
   <!-- Kernel and bootloader from Kynetics. -->
-  <project path="vendor/kynetics-opensource/uboot-imx" name="android-toradex-uboot-imx" remote="kynetics-github" revision="refs/tags/apalis_8qm-p9.0.0_2.0.1-snapshot-20190726" />
-  <project path="vendor/kynetics-opensource/kernel_imx" name="android-toradex-linux-imx" remote="kynetics-github" revision="refs/tags/apalis_8qm-p9.0.0_2.0.1-snapshot-20190726" />
+  <project path="vendor/kynetics-opensource/uboot-imx" name="android-toradex-uboot-imx" remote="kynetics-github" revision="refs/tags/colibri_8qxp-p9.0.0_2.0.1-snapshot-20190823" />
+  <project path="vendor/kynetics-opensource/kernel_imx" name="android-toradex-linux-imx" remote="kynetics-github" revision="refs/tags/colibri_8qxp-p9.0.0_2.0.1-snapshot-20190823" />
 
 </manifest>
