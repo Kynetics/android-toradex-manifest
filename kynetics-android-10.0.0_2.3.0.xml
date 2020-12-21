@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="kynetics-github"
+           fetch="https://github.com/kynetics/"
+           review="" />
+
+  <!-- Remove kernel and bootloader from NXP. -->
+  <remove-project name="linux-imx" />
+  <remove-project name="uboot-imx" />
+
+  <!-- Kernel and bootloader from Kynetics. -->
+  <project path="vendor/nxp-opensource/uboot-imx" name="android-toradex-uboot-imx" remote="kynetics-github" revision="refs/tags/colibri_8qxp-android-10.0.0_2.3.0-snapshot-20201221" />
+  <project path="vendor/nxp-opensource/kernel_imx" name="android-toradex-linux-imx" remote="kynetics-github" revision="refs/tags/colibri_8qxp-android-10.0.0_2.3.0-snapshot-20201221" />
+
+</manifest>
